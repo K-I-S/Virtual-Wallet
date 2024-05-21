@@ -5,10 +5,10 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 from fastapi import HTTPException
 
-from app.api.models.models import User
-from app.api.routes.users.schemas import UserDTO
-from app.api.routes.users.service import create
-from app.api.utils.db_dependency import get_db
+from backend.app.api.models.models import User
+from backend.app.api.routes.users.schemas import UserDTO
+from backend.app.api.routes.users.service import create
+from backend.app.api.utils.db_dependency import get_db
 
 
 def fake_user_dto():
